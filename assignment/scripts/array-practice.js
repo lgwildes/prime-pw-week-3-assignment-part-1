@@ -93,16 +93,39 @@ console.log('My favorite foods are now', favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+favoriteFoods.splice(1,1, 'ice cream');
+console.log('Removed bao and inserted ice cream');
+console.log(favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+favoriteFoods.sort((a,b) =>{
+    if (a > b)  
+        return -1;
+    if (a < b)
+        return 1;
+    return 0;
+});
+console.log(favoriteFoods);
+// TBH I probably understand 40% of why this previous problem works the way it does. 
+//I did research to figure this out, but struggle to keep the logic straight and comprehend it.
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let FoodsandAnimals = favoriteFoods.concat(animalArray);
+FoodsandAnimals.sort((a,b) =>{
+    if (a < b)  
+        return -1;
+    if (a > b)
+        return 1;
+    return 0;
+});
+console.log('My foods and animals combined and in alphabetical order:', FoodsandAnimals);
