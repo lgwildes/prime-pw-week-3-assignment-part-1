@@ -39,10 +39,7 @@ console.log('Last animal is' , animalArray[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-console.log('Last animal is' , animalArray.length)
-console.log (animalArray.length = 4 )
-
-//LYDIA WORK ON STRETCH ABOVE 
+console.log('Last animal is' , animalArray[animalArray.length -1] );
 
 
 // 4. Adding & Removing Array Items
@@ -114,6 +111,7 @@ console.log(favoriteFoods);
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 
+//join function
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
