@@ -62,8 +62,11 @@ console.log('The animals are now', animalArray);
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
 let removedFood = favoriteFoods.pop();
+
 favoriteFoods.pop();
+
 console.log('Removed the last food,', removedFood);
+
 console.log('Favorite foods are now', favoriteFoods);
 
 // Example: Add an animal to the beginning using Array.unshift
@@ -72,17 +75,22 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 favoriteFoods.unshift('pizza');
+
 console.log(`Added a favorite food to beginning: ${favoriteFoods} `);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
+
 console.log('Removed the first animal', removedAnimal);
+
 console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
 removedFood = favoriteFoods.shift();
+
 console.log('Removed the first food', removedFood);
+
 console.log('My favorite foods are now', favoriteFoods);
 
 
@@ -91,7 +99,9 @@ console.log('My favorite foods are now', favoriteFoods);
 //      with another one of your favorite foods.
 //      Then log the updated array.
 favoriteFoods.splice(1,1, 'ice cream');
+
 console.log('Removed bao and inserted ice cream');
+
 console.log(favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
@@ -103,7 +113,7 @@ favoriteFoods.sort((a,b) =>{
         return 1;
     return 0;
 });
-console.log(favoriteFoods);
+console.log('my favorite foods in reverse alphabetical order are' ,favoriteFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
@@ -116,7 +126,9 @@ console.log(favoriteFoods.join(' and '))
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
 let FoodsandAnimals = favoriteFoods.concat(animalArray);
+
 FoodsandAnimals.sort((a,b) =>{
     if (a < b)  
         return -1;
