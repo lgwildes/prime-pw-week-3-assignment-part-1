@@ -104,14 +104,12 @@ favoriteFoods.sort((a,b) =>{
     return 0;
 });
 console.log(favoriteFoods);
-// TBH I probably understand 40% of why this previous problem works the way it does. 
-//I did research to figure this out, but struggle to keep the logic straight and comprehend it.
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 
-//join function
+console.log(favoriteFoods.join(' and '))
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
